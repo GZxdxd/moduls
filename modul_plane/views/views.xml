@@ -1,1 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="action_plane_aeroport_tree">
+			<field name="name">Aeroport</field>
+			<field name="res_model">plane.aeroport</field>
+		</record>
 
+        <record model="ir.actions.act_window" id="action_plane_avio_tree">
+			<field name="name">Avio</field>
+			<field name="res_model">plane.avio</field>
+		</record>
+
+        <record model="ir.actions.act_window" id="action_plane_pilot_tree">
+			<field name="name">Pilot</field>
+			<field name="res_model">plane.pilot</field>
+		</record>
+
+        <record model="ir.actions.act_window" id="action_plane_vol_tree">
+			<field name="name">Vol</field>
+			<field name="res_model">plane.vol</field>
+		</record>
+
+        <menuitem name="Plane" id="plane_menu1" />
+	    <menuitem name="Aeroport" parent="plane_menu1" id="plane_menu1_1" action="action_plane_aeroport_tree" />
+        <menuitem name="Avio" parent="plane_menu1" id="plane_menu1_2" action="action_plane_avio_tree" />	
+        <menuitem name="Pilot" parent="plane_menu1" id="plane_menu1_3" action="action_plane_pilot_tree" />	
+        <menuitem name="Vol" parent="plane_menu1" id="plane_menu1_4" action="action_plane_vol_tree" />
+
+        <record model="ir.ui.view" id="view_plane_aeroport_tree">
+            <field name="name">plane_aeroport</field>
+            <field name="model">plane.aeroport</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Aeroport">
+                    <field name="nom"/>
+                    <field name="ciutat"/>
+                    <field name="pais"/>			
+                </tree>
+            </field>
+	    </record>
+
+        <record model="ir.ui.view" id="view_plane_avio_tree">
+            <field name="name">plane_avio</field>
+            <field name="model">plane.avio</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Avio">
+                    <field name="marca"/>
+                    <field name="model"/>
+                    <field name="maxVel"/>			
+                </tree>
+            </field>
+	    </record>
+
+        <record model="ir.ui.view" id="view_plane_pilot_tree">
+            <field name="name">plane_pilot</field>
+            <field name="model">plane.pilot</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Pilot">
+                    <field name="nom"/>
+                    <field name="cognoms"/>
+                    <field name="nif"/>
+                    <field name="telf"/>			
+                </tree>
+            </field>
+	    </record>
+
+        <record model="ir.ui.view" id="view_plane_vol_tree">
+            <field name="name">plane_vol</field>
+            <field name="model">plane.vol</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Vol">
+                    <field name="codi"/>
+                    <field name="passatgers"/>
+                    <field name="dataSortida"/>
+                    <field name="dataArrivada"/>			
+                </tree>
+            </field>
+	    </record>
+    </data>
+</odoo>
