@@ -4,21 +4,25 @@
         <record model="ir.actions.act_window" id="action_plane_aeroport_tree">
 			<field name="name">Aeroport</field>
 			<field name="res_model">plane.aeroport</field>
+            <field name="view_mode">tree,form</field>
 		</record>
 
         <record model="ir.actions.act_window" id="action_plane_avio_tree">
 			<field name="name">Avio</field>
 			<field name="res_model">plane.avio</field>
+            <field name="view_mode">tree,form</field>
 		</record>
 
         <record model="ir.actions.act_window" id="action_plane_pilot_tree">
 			<field name="name">Pilot</field>
 			<field name="res_model">plane.pilot</field>
+            <field name="view_mode">tree,form</field>
 		</record>
 
         <record model="ir.actions.act_window" id="action_plane_vol_tree">
 			<field name="name">Vol</field>
 			<field name="res_model">plane.vol</field>
+            <field name="view_mode">tree,form</field>
 		</record>
 
         <menuitem name="Plane" id="plane_menu1" />
