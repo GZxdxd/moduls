@@ -84,5 +84,83 @@
                 </tree>
             </field>
 	    </record>
+
+        <record model="ir.ui.view" id="view_zoo_aeroport_form">
+            <field name="name">zoo_aeroport</field>
+            <field name="model">zoo.aeroport</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Form Aeroport">
+                    <sheet>
+                        <field name="codi" required="" colspan="5"/>
+                        <field name="nom" required="" colspan="5"/>
+                        <field name="imatge" colspan="5"/>
+                        <field name="ciutat" required="" colspan="5"/>
+                        <field name="pais" required="" colspan="5"/>
+                        <field name="latitud" required="" colspan="5"/>
+                        <field name="longitud" required="" colspan="5"/>
+                        <field name="volDesti_ids" colspan="5"/>
+                        <field name="volOrigen_ids" colspan="5"/>
+                    </sheet>	
+                </form>
+            </field>
+	    </record>
+
+        <record model="ir.ui.view" id="view_zoo_avio_form">
+            <field name="name">zoo_avio</field>
+            <field name="model">zoo.avio</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Form Avio">
+                    <sheet>
+                        <field name="codi" required="" colspan="5"/>
+                        <field name="imatge" colspan="5"/>
+                        <field name="marca" required="" colspan="5"/>
+                        <field name="model" required="" colspan="5"/>
+                        <field name="maxVel" colspan="5"/>
+                        <field name="vols_ids" colspan="5"/>
+                    </sheet>	
+                </form>
+            </field>
+	    </record>
+
+        <record model="ir.ui.view" id="view_zoo_pilot_form">
+            <field name="name">zoo_pilot</field>
+            <field name="model">zoo.pilot</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Form Pilot">
+                    <sheet>
+                        <field name="codi" required="" colspan="5"/>
+                        <field name="nom" required="" colspan="5"/>
+                        <field name="cognoms" required="" colspan="5"/>
+                        <field name="nif" required="" colspan="5"/>
+                        <field name="telf" required="" colspan="5"/>
+                        <field name="email" colspan="5"/>
+                        <field name="vols_ids" colspan="5"/>
+                    </sheet>	
+                </form>
+            </field>
+	    </record>
+
+        <record model="ir.ui.view" id="view_zoo_vol_form">
+            <field name="name">zoo_vol</field>
+            <field name="model">zoo.vol</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Form Vol">
+                    <sheet>
+                        <field name="codi" required="" colspan="5"/>
+                        <field name="passatgers" colspan="5"/>
+                        <field name="dataSortida" colspan="5"/>
+                        <field name="dataArrivada" colspan="5"/>
+                        <field name="aeroportDesti_id" colspan="5"/>
+                        <field name="aeroportOrigen_id" colspan="5"/>
+                        <field name="avio_id" colspan="5"/>
+                        <field name="pilot_id" colspan="5"/>
+                    </sheet>	
+                </form>
+            </field>
+	    </record>
     </data>
 </odoo>

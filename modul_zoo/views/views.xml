@@ -65,5 +65,60 @@
                 </tree>
             </field>
 	    </record>
+
+        <record model="ir.ui.view" id="view_zoo_zoo_form">
+            <field name="name">zoo_zoo</field>
+            <field name="model">zoo.zoo</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Form Zoo">
+                    <sheet>
+                        <field name="codi" required="" colspan="5"/>
+                        <field name="nom" required="" colspan="5"/>
+                        <field name="grandaria" colspan="5"/>
+                        <field name="ciutat" colspan="5"/>
+                        <field name="pais" colspan="5"/>
+                        <field name="animals_ids" colspan="5"/>
+                    </sheet>	
+                </form>
+            </field>
+	    </record>
+
+        <record model="ir.ui.view" id="view_zoo_animal_form">
+            <field name="name">zoo_animal</field>
+            <field name="model">zoo.animal</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Form Animal">
+                    <sheet>
+                        <field name="codi" required="" colspan="5"/>
+                        <field name="continentOrigen" colspan="5"/>
+                        <field name="dataNaix" colspan="5"/>
+                        <field name="paisOrigen" colspan="5"/>
+                        <field name="sexe" colspan="5"/>
+                        <field name="zoo_id" colspan="5"/>
+                        <field name="especie_id" colspan ="5"/>
+                    </sheet>	
+                </form>
+            </field>
+	    </record>
+
+        <record model="ir.ui.view" id="view_zoo_especie_form">
+            <field name="name">zoo_especie</field>
+            <field name="model">zoo.especie</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Form Especie">
+                    <sheet>
+                        <field name="codi" required="" colspan="5"/>
+                        <field name="perill" colspan="5"/>
+                        <field name="familia" colspan="5"/>
+                        <field name="nomCientific" colspan="5"/>
+                        <field name="nomVulgar" colspan="5"/>
+                        <field name="animals_ids" colspan="5"/>
+                    </sheet>	
+                </form>
+            </field>
+	    </record>
     </data>
 </odoo>
