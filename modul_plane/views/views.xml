@@ -85,9 +85,9 @@
             </field>
 	    </record>
 
-        <record model="ir.ui.view" id="view_zoo_aeroport_form">
-            <field name="name">zoo_aeroport</field>
-            <field name="model">zoo.aeroport</field>
+        <record model="ir.ui.view" id="view_plane_aeroport_form">
+            <field name="name">plane_aeroport</field>
+            <field name="model">plane.aeroport</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Form Aeroport">
@@ -106,9 +106,9 @@
             </field>
 	    </record>
 
-        <record model="ir.ui.view" id="view_zoo_avio_form">
-            <field name="name">zoo_avio</field>
-            <field name="model">zoo.avio</field>
+        <record model="ir.ui.view" id="view_plane_avio_form">
+            <field name="name">plane_avio</field>
+            <field name="model">plane.avio</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Form Avio">
@@ -124,9 +124,9 @@
             </field>
 	    </record>
 
-        <record model="ir.ui.view" id="view_zoo_pilot_form">
-            <field name="name">zoo_pilot</field>
-            <field name="model">zoo.pilot</field>
+        <record model="ir.ui.view" id="view_plane_pilot_form">
+            <field name="name">plane_pilot</field>
+            <field name="model">plane.pilot</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Form Pilot">
@@ -143,9 +143,9 @@
             </field>
 	    </record>
 
-        <record model="ir.ui.view" id="view_zoo_vol_form">
-            <field name="name">zoo_vol</field>
-            <field name="model">zoo.vol</field>
+        <record model="ir.ui.view" id="view_plane_vol_form">
+            <field name="name">plane_vol</field>
+            <field name="model">plane.vol</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Form Vol">
